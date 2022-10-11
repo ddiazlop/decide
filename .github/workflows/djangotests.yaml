@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python ${{matrix.pyversion}}
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@v2
       with:
         python-version: ${{matrix.pyversion}}
     - name: psycopg2 prerequisites
